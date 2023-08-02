@@ -40,7 +40,7 @@ const person = {
   name: "Maks",
   age: 42,
 };
-const person2 = JSON.parse(JSON.stringify(person)); // копирует из person в переменную person2
+const person2 = JSON.parse(JSON.stringify(person)); // копирует из person в переменную person2 ссылки на вложенные объекты не сохраняются
 person2.name = 'Maks Dorozhkin';
 console.log(person2.name);
 console.log(person.name);
